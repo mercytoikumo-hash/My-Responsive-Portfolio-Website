@@ -1,6 +1,4 @@
-/* =========================
-   RESET & BASE STYLES
-========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +9,12 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   color: #fff;
-  background-color: #000; /* black background */
+  background-color: #000; 
   font-size: 20px;
 }
 
-/* Headings */
 h1, h2, h3 {
-  color: #ffd700; /* gold */
+  color: #ffd700; 
   text-align: center;
 }
 
@@ -35,16 +32,12 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Fluid images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* =========================
-   HEADER & NAVIGATION
-========================= */
 .header {
   display: flex;
   justify-content: space-between;
@@ -69,7 +62,6 @@ img {
   height: auto;
 }
 
-/* Navbar */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -89,12 +81,10 @@ img {
   color: #ffd700;
 }
 
-/* Hide checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Hamburger icon */
 .hamburger {
   display: none;
   font-size: 28px;
@@ -104,9 +94,6 @@ img {
   padding: 6px;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
 .about {
   display: flex;
   align-items: center;
@@ -119,7 +106,7 @@ img {
 
 .about-text {
   flex: 1 1 55%;
-  text-align: center; /* center the text */
+  text-align: center; 
 }
 
 .about-text h2 {
@@ -149,16 +136,12 @@ img {
   transition: all 0.4s ease;
 }
 
-/* Hover effect — changes shape and zooms */
 .about-image img:hover {
   border-radius: 20%;
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
 }
 
-/* =========================
-   PROJECTS SECTION
-========================= */
 .projects {
   padding: 3rem 2rem;
   background: #111;
@@ -205,9 +188,6 @@ img {
   line-height: 1.8;
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
 .contact {
   padding: 3rem 2rem;
   text-align: center;
@@ -240,9 +220,6 @@ img {
   color: #000;
 }
 
-/* =========================
-   FOOTER SECTION
-========================= */
 .footer {
   text-align: center;
   background: #111;
@@ -274,11 +251,8 @@ img {
   opacity: 0.8;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
-/* Tablets */
+
 @media (max-width: 900px) {
   .about {
     flex-direction: column;
@@ -291,7 +265,6 @@ img {
   }
 }
 
-/* Mobile Navigation */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -333,9 +306,6 @@ img {
   }
 }
 
-/* =========================
-   SMOOTH SCROLL (optional)
-========================= */
 html {
   scroll-behavior: smooth;
 }
