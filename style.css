@@ -1,0 +1,341 @@
+/* =========================
+   RESET & BASE STYLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color: #fff;
+  background-color: #000; /* black background */
+  font-size: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffd700; /* gold */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Fluid images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+/* Navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  color: #ffd700;
+  padding: 6px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: #000;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  text-align: center; /* center the text */
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.about-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* Hover effect — changes shape and zooms */
+.about-image img:hover {
+  border-radius: 20%;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects {
+  padding: 3rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.project-card h3 {
+  color: #ffd700;
+  margin: 0.8rem 0;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #000;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.email-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #ffd700;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+.footer {
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.social-links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  #menu-toggle:checked ~ .navbar ul {
+    display: flex;
+  }
+
+  .navbar ul li a {
+    color: #fff;
+  }
+
+  .navbar ul li a:hover {
+    color: #ffd700;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    padding: 2rem 1rem;
+  }
+}
+
+/* =========================
+   SMOOTH SCROLL (optional)
+========================= */
+html {
+  scroll-behavior: smooth;
+}
